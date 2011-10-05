@@ -1,0 +1,19 @@
+﻿@model NorthwindConnection.Customer
+
+@{
+    ViewBag.Title = "Customer";
+}
+
+<h2>Customer List</h2>
+<table>
+    @foreach (var c in ViewBag.Customers)
+    {
+        <tr>
+            <td>@c.CustomerID</td>
+            <td>@c.CompanyName</td>
+            <td>@c.ContactName</td>
+            <td>@c.Phone</td>
+        </tr>
+    }
+</table>
+
